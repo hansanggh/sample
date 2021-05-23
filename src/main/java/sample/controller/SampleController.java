@@ -20,4 +20,14 @@ public class SampleController {
 		
 		return "/main/index";
 	}
+
+	/**
+	 * @param model
+	 * @return
+	 */
+	@GetMapping(value = "/project01")
+	public String firstProject(HttpServletRequest request, Model model) {
+
+		return "/project01/index";
+	}
 }
